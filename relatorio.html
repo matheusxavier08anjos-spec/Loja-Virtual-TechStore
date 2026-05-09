@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Relatório dos dados armazenados no navegador pela loja virtual TechStore.">
+
+  <title>TechStore | Relatório</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="logo">
+      <h1>TechStore</h1>
+      <p>Loja virtual de tecnologia</p>
+    </div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+        <li><a href="login.html">Login/Cadastro</a></li>
+        <li><a href="relatorio.html">Relatório</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+
+    <section class="secao">
+      <h2>Relatório do Sistema</h2>
+
+      <p>
+        Esta página será responsável por exibir os dados armazenados no navegador
+        utilizando LocalStorage.
+      </p>
+
+      <p>
+        O objetivo é mostrar informações como usuário cadastrado, produtos no
+        carrinho e outros dados salvos durante a navegação pelo site.
+      </p>
+    </section>
+
+    <section class="secao">
+      <h2>Dados do usuário</h2>
+
+      <div id="relatorio-usuario" class="relatorio-box">
+        <p><strong>Nome:</strong> Usuário exemplo</p>
+        <p><strong>E-mail:</strong> usuario@email.com</p>
+        <p><strong>Telefone:</strong> (11) 99999-9999</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>Produtos armazenados no carrinho</h2>
+
+      <div id="relatorio-carrinho" class="relatorio-box">
+        <article class="card-produto">
+          <h3>Mouse Gamer</h3>
+          <p><strong>Preço:</strong> R$ 99,90</p>
+          <p><strong>Quantidade:</strong> 1</p>
+        </article>
+
+        <article class="card-produto">
+          <h3>Teclado Mecânico</h3>
+          <p><strong>Preço:</strong> R$ 199,90</p>
+          <p><strong>Quantidade:</strong> 1</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>Resumo armazenado</h2>
+
+      <div class="resumo-compra">
+        <p><strong>Total de produtos:</strong> 2</p>
+        <p><strong>Valor total do carrinho:</strong> R$ 299,80</p>
+
+        <button type="button" class="botao">Atualizar relatório</button>
+        <button type="button" class="botao">Limpar dados armazenados</button>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>Observação</h2>
+
+      <p>
+        Os dados exibidos acima são exemplos estáticos em HTML.
+        Na etapa de JavaScript, essas informações serão carregadas diretamente
+        do LocalStorage, permitindo visualizar o que está salvo no navegador.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 TechStore. Projeto acadêmico de Programação Web 1.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

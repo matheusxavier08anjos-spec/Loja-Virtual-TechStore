@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TechStore | Carrinho</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="logo">
+      <h1>TechStore</h1>
+      <p>Loja virtual de tecnologia</p>
+    </div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+        <li><a href="login.html">Login/Cadastro</a></li>
+        <li><a href="relatorio.html">Relatório</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+
+    <section class="secao">
+      <h2>Meu Carrinho</h2>
+
+      <p>
+        Nesta página serão exibidos os produtos adicionados ao carrinho.
+        Depois, com JavaScript, os dados serão recuperados do LocalStorage.
+      </p>
+    </section>
+
+    <section class="secao">
+      <h2>Produtos adicionados</h2>
+
+      <div id="lista-carrinho" class="lista-carrinho">
+        <article class="card-produto">
+          <h3>Mouse Gamer</h3>
+          <p><strong>Preço:</strong> R$ 99,90</p>
+          <p><strong>Quantidade:</strong> 1</p>
+          <button type="button" class="botao">Remover produto</button>
+        </article>
+
+        <article class="card-produto">
+          <h3>Teclado Mecânico</h3>
+          <p><strong>Preço:</strong> R$ 199,90</p>
+          <p><strong>Quantidade:</strong> 1</p>
+          <button type="button" class="botao">Remover produto</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>Resumo da compra</h2>
+
+      <div class="resumo-compra">
+        <p><strong>Total de itens:</strong> 2</p>
+        <p><strong>Valor total:</strong> R$ 299,80</p>
+
+        <button type="button" class="botao">Finalizar compra</button>
+        <button type="button" class="botao">Limpar carrinho</button>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>Observação</h2>
+
+      <p>
+        Os produtos exibidos acima são exemplos estáticos em HTML.
+        Na etapa de JavaScript, essa área será preenchida automaticamente
+        com os itens salvos no LocalStorage.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 TechStore. Projeto acadêmico de Programação Web 1.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
